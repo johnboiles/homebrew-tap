@@ -11,6 +11,10 @@ cask "quicklookstep" do
 
   app "QuickLookStep.app"
 
+  postflight do
+    system_command "/usr/bin/open", args: ["-a", "QuickLookStep"], sudo: false
+  end
+
   caveats <<~EOS
     After installing, open QuickLookStep.app once and enable the extensions:
     System Settings → General → Login Items & Extensions → QuickLookStep.
