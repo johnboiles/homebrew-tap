@@ -1,6 +1,6 @@
 cask "quicklookstep" do
-  version "1.5"
-  sha256 "4ded6e7215c16424844e475521c6524ad548dd90fd69428f17177612165ebebd"
+  version "1.6"
+  sha256 "164e156be8b759ae5212484790e4cd56dd7bdf20257030541a101a6262a64558"
 
   url "https://github.com/johnboiles/quick-look-step/releases/download/release/v#{version}/QuickLookStep.zip"
   name "QuickLookStep"
