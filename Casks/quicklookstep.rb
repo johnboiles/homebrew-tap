@@ -12,7 +12,7 @@ cask "quicklookstep" do
   app "QuickLookStep.app"
 
   postflight do
-    system_command "/usr/bin/open", args: ["-a", "QuickLookStep"], sudo: false
+    system_command "/usr/bin/open", args: ["/Applications/QuickLookStep.app"], sudo: false
   end
 
   caveats <<~EOS
