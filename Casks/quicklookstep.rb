@@ -7,7 +7,7 @@ cask "quicklookstep" do
   desc "Fast Quick Look previews and Finder thumbnails for STEP files"
   homepage "https://github.com/johnboiles/quick-look-step"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "QuickLookStep.app"
 
