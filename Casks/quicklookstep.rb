@@ -11,12 +11,6 @@ cask "quicklookstep" do
 
   app "QuickLookStep.app"
 
-  # Open the app once so the user can enable the extensions (see caveats).
-  # Not fatal: a failing `open` must not roll back an otherwise successful install.
-  postflight_steps do
-    run "/usr/bin/open", args: ["{{appdir}}/QuickLookStep.app"], must_succeed: false
-  end
-
   caveats <<~EOS
     After installing, open QuickLookStep.app once and enable the extensions:
     System Settings → General → Login Items & Extensions → QuickLookStep.
