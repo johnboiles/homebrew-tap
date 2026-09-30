@@ -12,7 +12,12 @@ cask "quicklookstep" do
   app "QuickLookStep.app"
 
   caveats <<~EOS
-    After installing, open QuickLookStep.app once and enable the extensions:
-    System Settings → General → Login Items & Extensions → QuickLookStep.
+    After installing, open QuickLookStep.app once and click Open if prompted
+    by macOS to activate its extensions. You can quit the app afterwards.
+
+    If previews or thumbnails still do not work, enable QuickLookStep's
+    extensions in System Settings:
+      macOS Sonoma: Privacy & Security → Extensions → Quick Look.
+      Newer macOS: General → Login Items & Extensions.
   EOS
 end
